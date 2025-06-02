@@ -230,7 +230,7 @@ public class customerpagecontroller implements Initializable {
         CustomerTM selectedItem=tblCustomers.getSelectionModel().getSelectedItem();
 
         if(selectedItem!=null){
-            fillFields(selectedItem); // Use existing fillFields method
+            fillFields(selectedItem);
         }
     }
 

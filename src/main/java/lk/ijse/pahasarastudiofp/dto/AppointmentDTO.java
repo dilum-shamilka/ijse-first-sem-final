@@ -61,9 +61,8 @@ public class AppointmentDTO {
                 '}';
     }
 
-    // This method seems redundant based on your DTO structure, but was in your original code.
-    // If 'name' is the appointment's name, then getName() already provides it.
+
     public String getAppointmentName() {
-        return this.name; // Assuming 'name' field is the appointment name
+        return this.name;
     }
 }

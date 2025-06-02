@@ -10,7 +10,7 @@ import java.util.Properties;
 public class EmailModel {
 
     private static final String MAILTRAP_HOST     = "sandbox.smtp.mailtrap.io";
-    private static final int    MAILTRAP_PORT     = 2525;          // 2525 also works
+    private static final int    MAILTRAP_PORT     = 2525;
     private static final String MAILTRAP_USERNAME = "136ca13b8e9b73";
     private static final String MAILTRAP_PASSWORD = "680bb52868bec0";
 

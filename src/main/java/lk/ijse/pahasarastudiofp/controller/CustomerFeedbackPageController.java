@@ -78,14 +78,14 @@ public class CustomerFeedbackPageController implements Initializable {
         loadAppointmentIds();
         loadAllFeedback();
 
-        // Listen to table selection and fill fields
+
         tblFeedback.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 fillFields(newValue);
             }
         });
 
-        // Initial button state
+
         btnSaveFeedback.setDisable(false);
         btnUpdateFeedback.setDisable(true);
         btnDeleteFeedback.setDisable(true);

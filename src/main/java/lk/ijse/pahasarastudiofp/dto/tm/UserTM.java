@@ -16,7 +16,6 @@ public class UserTM {
         this.role = role;
     }
 
-    // Getters and Setters (same as UserDTO for simplicity in table view)
     public int getUserId() {
         return userId;
     }

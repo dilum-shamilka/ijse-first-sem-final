@@ -1,4 +1,3 @@
-// File: src/main/java/lk/ijse/pahasarastudiofp/dto/tm/CustomerTM.java
 
 package lk.ijse.pahasarastudiofp.dto.tm;
 

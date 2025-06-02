@@ -13,14 +13,9 @@ public class PaymentDetailsDTO {
         this.paymentId = paymentId;
         this.appointmentId = appointmentId;
         this.amount = amount;
-        // Removed: this.status = status;
+
     }
 
-    // public PaymentDetailsDTO(int paymentId, int appointmentId, double amount) {    }  <--  Redundant Constructor
-
-    // public PaymentDetailsDTO(int paymentId, String status) {  }  <-- Removed Constructor
-
-    // Getters and Setters
     public int getPaymentId() {
         return paymentId;
     }
@@ -45,11 +40,10 @@ public class PaymentDetailsDTO {
         this.amount = amount;
     }
 
-    // Removed getStatus()
-    // Removed setStatus()
+
 
     public Integer getPaymentDetailsId() {
-        return paymentId; // Return the paymentId (which seems to be the ID)
+        return paymentId;
     }
 
     @Override

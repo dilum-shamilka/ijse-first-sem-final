@@ -1,4 +1,3 @@
-// File: src/main/java/lk/ijse/pahasarastudiofp/controller/AppointmentPageController.java
 
 package lk.ijse.pahasarastudiofp.controller;
 
@@ -23,10 +22,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-/**
- * Controller class for the Appointment Management page.
- * Handles user interactions and updates the view based on model data.
- */
+
 public class AppointmentPageController implements Initializable {
 
     @FXML
@@ -36,7 +32,7 @@ public class AppointmentPageController implements Initializable {
     private ComboBox<Integer> cmbPackageId;
 
     @FXML
-    private TextField txtName; // Text field for appointment name/description
+    private TextField txtName;
 
     @FXML
     private Button btnSaveAppointment;
@@ -60,39 +56,37 @@ public class AppointmentPageController implements Initializable {
     private TableColumn<AppointmentTM, Integer> colCustomerId;
 
     @FXML
-    private TableColumn<AppointmentTM, String> colCustomerName; // Display customer name
+    private TableColumn<AppointmentTM, String> colCustomerName;
 
     @FXML
     private TableColumn<AppointmentTM, Integer> colPackageId;
 
     @FXML
-    private TableColumn<AppointmentTM, String> colPackageName; // Display package name
+    private TableColumn<AppointmentTM, String> colPackageName;
 
     @FXML
-    private TableColumn<AppointmentTM, String> colName; // Display appointment name/description
+    private TableColumn<AppointmentTM, String> colName;
 
-    // Model instances for database operations
+
     private final AppointmentModel appointmentModel = new AppointmentModel();
-    private final CustomerModel customerModel = new CustomerModel(); // Needed for loading customer names/IDs
-    private final PackageModel packageModel = new PackageModel(); // Needed for loading package names/IDs
+    private final CustomerModel customerModel = new CustomerModel();
+    private final PackageModel packageModel = new PackageModel();
 
-    // ObservableList to hold data for the TableView
     private ObservableList<AppointmentTM> obList = FXCollections.observableArrayList();
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Disable update and delete buttons initially as no item is selected
+
         btnUpdateAppointment.setDisable(true);
         btnDeleteAppointment.setDisable(true);
 
-        // Load data into combo boxes and table
         loadCustomerIds();
         loadPackageIds();
         setCellValueFactory();
         loadAllAppointments();
 
-        // Add listener to table selection to fill fields when an item is selected
+
         tblAppointments.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 fillFields(newValue);
@@ -100,9 +94,7 @@ public class AppointmentPageController implements Initializable {
         });
     }
 
-    /**
-     * Loads customer IDs into the customer ID combo box.
-     */
+
     private void loadCustomerIds() {
         try {
             cmbCustomerId.getItems().clear();
@@ -115,9 +107,7 @@ public class AppointmentPageController implements Initializable {
         }
     }
 
-    /**
-     * Loads package IDs into the package ID combo box.
-     */
+
     private void loadPackageIds() {
         try {
             cmbPackageId.getItems().clear();
@@ -144,24 +134,23 @@ public class AppointmentPageController implements Initializable {
     private void loadAllAppointments() {
         try {
             List<AppointmentDTO> allAppointments = appointmentModel.getAllAppointments();
-            obList.clear(); // Clear existing items before loading new ones
+            obList.clear();
             for (AppointmentDTO appointment : allAppointments) {
-                // Fetch customer and package names using their IDs
-                // Using customerModel and packageModel for consistency
-                String customerName = customerModel.getCustomerName(appointment.getCustomerId());
-                String packageName = packageModel.getPackageName(appointment.getPackageId()); // Assuming PackageModel has getPackageName
 
-                // Create an AppointmentTM object with all necessary display data
+                String customerName = customerModel.getCustomerName(appointment.getCustomerId());
+                String packageName = packageModel.getPackageName(appointment.getPackageId());
+
+
                 obList.add(new AppointmentTM(
                         appointment.getAppointmentId(),
                         appointment.getCustomerId(),
                         appointment.getPackageId(),
-                        appointment.getName(), // This is the appointment's specific name
+                        appointment.getName(),
                         customerName,
                         packageName
                 ));
             }
-            tblAppointments.setItems(obList); // Set the populated list to the table
+            tblAppointments.setItems(obList);
         } catch (SQLException | ClassNotFoundException e) {
             showAlert(Alert.AlertType.ERROR, "Error loading appointments: " + e.getMessage());
         }
@@ -171,10 +160,10 @@ public class AppointmentPageController implements Initializable {
     private void fillFields(AppointmentTM tm) {
         cmbCustomerId.setValue(tm.getCustomerId());
         cmbPackageId.setValue(tm.getPackageId());
-        txtName.setText(tm.getName()); // Set the appointment's specific name
-        btnSaveAppointment.setDisable(true); // Disable save when editing
-        btnUpdateAppointment.setDisable(false); // Enable update
-        btnDeleteAppointment.setDisable(false); // Enable delete
+        txtName.setText(tm.getName());
+        btnSaveAppointment.setDisable(true);
+        btnUpdateAppointment.setDisable(false);
+        btnDeleteAppointment.setDisable(false);
     }
 
 

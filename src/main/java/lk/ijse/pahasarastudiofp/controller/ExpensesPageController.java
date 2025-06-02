@@ -71,7 +71,7 @@ public class ExpensesPageController implements Initializable {
         setCellValueFactory();
         loadAllExpenses();
 
-        // Disable update/delete on start
+
         btnUpdateExpense.setDisable(true);
         btnDeleteExpense.setDisable(true);
 

@@ -1,4 +1,4 @@
-package lk.ijse.pahasarastudiofp.controller; // Adjust package as needed
+package lk.ijse.pahasarastudiofp.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

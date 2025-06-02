@@ -5,8 +5,8 @@ public class CustomerFeedbackTM {
     private int customerId;
     private int appointmentId;
     private int rating;
-    private String customerName; // To display customer name
-    private String appointmentName; // To display appointment name
+    private String customerName;
+    private String appointmentName;
 
     public CustomerFeedbackTM() {
     }

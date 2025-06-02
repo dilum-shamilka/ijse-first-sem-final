@@ -6,7 +6,7 @@ public class PackageServiceTM {
     private int serviceId;
     private String packageName;   // For display
     private String serviceName;   // For display
-    // Add fields for additional attributes if any
+
 
     public PackageServiceTM() {
     }

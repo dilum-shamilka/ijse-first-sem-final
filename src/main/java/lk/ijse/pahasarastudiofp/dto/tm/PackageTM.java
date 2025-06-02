@@ -14,7 +14,7 @@ public class PackageTM {
         this.description = description;
     }
 
-    // Getters and Setters (same as PackageDTO for simplicity in table view)
+
     public int getPackageId() {
         return packageId;
     }

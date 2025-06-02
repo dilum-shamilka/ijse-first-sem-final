@@ -14,9 +14,9 @@ public class GoodbyeController {
 
     @FXML
     void handleOkButton(ActionEvent event) {
-        // Get the stage (window) from the button that triggered the event
+
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.close(); // Close the goodbye window
-        System.out.println("Goodbye window was closed."); // For debugging
+        stage.close();
+        System.out.println("Goodbye window was closed.");
     }
 }

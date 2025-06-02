@@ -20,7 +20,7 @@ public class ServiceDTO {
     }
 
 
-    // Getters and Setters
+
     public int getServiceId() {
         return serviceId;
     }

@@ -64,7 +64,6 @@ public class EventLocationPageController implements Initializable {
         loadAllLocations();
         clearFields();
 
-        // Set listener for table selection to fill form fields
         tblLocations.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 fillFields(newValue);
@@ -72,7 +71,7 @@ public class EventLocationPageController implements Initializable {
         });
     }
 
-    // Initialize table columns mapping
+
     private void setCellValueFactory() {
         colEventId.setCellValueFactory(new PropertyValueFactory<>("eventId"));
         colAddress.setCellValueFactory(new PropertyValueFactory<>("address"));
@@ -80,7 +79,7 @@ public class EventLocationPageController implements Initializable {
         colVenueType.setCellValueFactory(new PropertyValueFactory<>("venueType"));
     }
 
-    // Load all event locations from DB and populate table
+
     private void loadAllLocations() {
         try {
             List<EventLocationDTO> allLocations = locationModel.getAllLocations();
@@ -99,7 +98,7 @@ public class EventLocationPageController implements Initializable {
         }
     }
 
-    // Fill form fields when a table row is selected
+
     private void fillFields(EventLocationTM tm) {
         txtAddress.setText(tm.getAddress());
         txtLocationType.setText(tm.getLocationType());
@@ -217,7 +216,7 @@ public class EventLocationPageController implements Initializable {
         tblLocations.getSelectionModel().clearSelection();
     }
 
-    // Helper method to show alerts
+
     private void showAlert(Alert.AlertType type, String message) {
         new Alert(type, message).show();
     }

@@ -57,13 +57,13 @@ public class EmployeePageController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Setup table columns
+
         setCellValueFactory();
 
-        // Load all employees initially
+
         loadAllEmployees();
 
-        // Listen to selection changes to fill fields and toggle buttons
+
         tblEmployees.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 fillFields(newValue);
@@ -72,7 +72,7 @@ public class EmployeePageController implements Initializable {
             }
         });
 
-        // Initial button states
+
         btnUpdateEmployee.setDisable(true);
         btnDeleteEmployee.setDisable(true);
     }

@@ -4,7 +4,7 @@ public class PaymentDetailsTM {
     private int paymentId;
     private int appointmentId;
     private double amount;
-    private String appointmentName; // To display appointment name
+    private String appointmentName;
 
     public PaymentDetailsTM() {
     }
@@ -17,7 +17,7 @@ public class PaymentDetailsTM {
     }
 
 
-    // Getters and Setters
+
     public int getPaymentId() {
         return paymentId;
     }

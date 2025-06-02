@@ -5,8 +5,7 @@ public class ExpensesTM {
     private int employeeId;
     private double amount;
     private String description;
-    private String employeeName; // To display employee name in the table
-
+    private String employeeName;
     public ExpensesTM() {
     }
 

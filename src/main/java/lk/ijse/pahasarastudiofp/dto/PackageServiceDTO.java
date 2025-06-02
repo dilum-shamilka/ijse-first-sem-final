@@ -15,7 +15,7 @@ public class PackageServiceDTO {
         this.serviceId = serviceId;
     }
 
-    // Getters and Setters
+
     public int getPackageServiceId() {
         return packageServiceId;
     }

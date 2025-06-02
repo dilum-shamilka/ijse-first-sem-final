@@ -16,7 +16,7 @@ public class ServiceTM {
         this.price = price;
     }
 
-    // Getters and Setters (same as ServiceDTO for simplicity in table view)
+
     public int getServiceId() {
         return serviceId;
     }

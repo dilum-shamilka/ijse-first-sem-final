@@ -118,7 +118,7 @@ public class DashboardController {
 
     private void loadAndShowStage(String fxmlFileName, String title) throws IOException {
         try {
-            // Ensure the path is correct, assuming FXML files are in src/main/resources/view/
+
             URL fxmlUrl = getClass().getResource("/view/" + fxmlFileName);
             if (fxmlUrl == null) {
                 System.err.println("Error: FXML file not found at /view/" + fxmlFileName);
@@ -132,7 +132,7 @@ public class DashboardController {
         } catch (IOException e) {
             System.err.println("Error loading FXML: " + fxmlFileName);
             e.printStackTrace();
-            throw e; // Re-throw the exception to indicate failure
+            throw e;
         }
     }
 }

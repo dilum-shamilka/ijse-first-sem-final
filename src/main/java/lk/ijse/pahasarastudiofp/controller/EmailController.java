@@ -5,7 +5,7 @@ import javafx.scene.control.*;
 import lk.ijse.pahasarastudiofp.dto.EmailDTO;
 import lk.ijse.pahasarastudiofp.model.EmailModel;
 
-public class EmailController {  // <-- renamed class
+public class EmailController {
 
     @FXML
     private TextField txtTo;

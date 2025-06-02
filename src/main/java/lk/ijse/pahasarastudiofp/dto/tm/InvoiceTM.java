@@ -7,8 +7,8 @@ public class InvoiceTM {
     private int appointmentId;
     private Date date;
     private double amount;
-    private Integer reportId; // Changed to Integer to allow null values
-    private String appointmentName; // Added for display purposes
+    private Integer reportId;
+    private String appointmentName;
 
     public InvoiceTM() {
     }

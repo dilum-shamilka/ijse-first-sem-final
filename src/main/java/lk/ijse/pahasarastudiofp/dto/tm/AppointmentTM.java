@@ -1,4 +1,4 @@
-// File: src/main/java/lk/ijse/pahasarastudiofp/dto/tm/AppointmentTM.java
+
 
 package lk.ijse.pahasarastudiofp.dto.tm;
 
@@ -6,9 +6,9 @@ public class AppointmentTM {
     private int appointmentId;
     private int customerId;
     private int packageId;
-    private String name; // Specific name/description of the appointment
-    private String customerName; // To display customer name in the table
-    private String packageName;   // To display package name in the table
+    private String name;
+    private String customerName;
+    private String packageName;
 
     public AppointmentTM() {
     }
