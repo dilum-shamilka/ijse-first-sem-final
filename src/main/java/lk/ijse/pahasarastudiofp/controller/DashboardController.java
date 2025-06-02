@@ -80,9 +80,14 @@ public class DashboardController {
         loadAndShowStage("serviceemployee.fxml", "Employee Service Management");
     }
 
+    // New method to open the Email Sender Form
+    public void openEmailSenderPage(ActionEvent actionEvent) throws IOException {
+        loadAndShowStage("email.fxml", "Send Email");
+    }
+
+
     public void logout(ActionEvent event) {
         try {
-
             Stage currentDashboardStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             URL goodbyeFxmlUrl = getClass().getResource("/view/Goodbye.fxml");
             if (goodbyeFxmlUrl == null) {
@@ -107,7 +112,6 @@ public class DashboardController {
         } catch (IOException e) {
             e.printStackTrace();
             System.err.println("An error occurred during logout sequence: " + e.getMessage());
-
         }
     }
 
