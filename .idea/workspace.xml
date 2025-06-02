@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df55b524-48b5-4780-a365-216645949b08" name="Changes" comment="2nd one">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/GoodbyeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/GoodBye.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/AppointmentPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/AppointmentPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/CustomerFeedbackPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/CustomerFeedbackPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/DiscountPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/DiscountPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/EmployeePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/EmployeePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/EmployeeServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/EmployeeServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/EventLocationPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/EventLocationPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/ExpensesPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/ExpensesPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/InvoicePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/InvoicePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/PackagePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/PackagePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/PackageServicePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/PackageServicePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/UserPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/UserPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/db/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/AppointmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/EmployeeServiceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/EmployeeServiceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/tm/AppointmentTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/tm/AppointmentTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/tm/CustomerTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/tm/CustomerTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/tm/EmployeeServiceTM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/dto/tm/EmployeeServiceTM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/AppointmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/AppointmentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/CustomerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/EmployeeServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/EmployeeServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Customerfeedback.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Customerfeedback.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/DiscountsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/DiscountsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/appoinment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/appoinment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/customer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/employee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/eventlocation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/eventlocation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/expenses.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/expenses.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/invoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/invoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/package.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/package.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/packageservice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/packageservice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/paymentdetails.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/paymentdetails.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/service.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/service.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/user.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/user.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/Initializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/AppointmentPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/AppointmentPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/CustomerFeedbackPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/CustomerFeedbackPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/DiscountPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/DiscountPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/EmployeePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/EmployeePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/EventLocationPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/EventLocationPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/ExpensesPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/ExpensesPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/InvoicePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/InvoicePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/PackagePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/PackagePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/PackageServicePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/PackageServicePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/UserPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/UserPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/db/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/db/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/AppointmentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/AppointmentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/CustomerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/CustomerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/tm/AppointmentTM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/tm/AppointmentTM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/tm/CustomerTM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/tm/CustomerTM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/AppointmentModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/AppointmentModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/CustomerModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/CustomerModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/Customerfeedback.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Customerfeedback.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/DiscountsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/DiscountsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/appoinment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/appoinment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/customer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/employee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/eventlocation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/eventlocation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/expenses.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/expenses.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/invoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/invoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/package.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/package.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/packageservice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/packageservice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/paymentdetails.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/paymentdetails.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/service.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/service.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/user.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/user.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dilum-shamilka&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dilum-shamilka/final-project-1.git&quot;,
+    &quot;accountId&quot;: &quot;a5c73d4a-e1c5-4eb7-b7fc-53ea2664bb21&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+    &quot;isMigrated&quot;: true
+    }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+    &quot;associatedIndex&quot;: 8
+    }</component>
+  <component name="ProjectId" id="2wHj9hft6jUa1UrYx3rG1LbZaKK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AppInitializer.executor": "Run",
+    "Application.Appinizializer.executor": "Run",
+    "Application.Initializer.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "<unknown>",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/pahasarafx new/final-project-1/src/main/resources/view/dashboard.fxml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lk.ijse.pahasarastudiofp.model" />
+      <recent name="lk.ijse.pahasarastudiofp.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\WINDOWS\AppData\Local\Temp\821c11b0-64df-4e5d-8c9e-7a2828c8ee89_gdse-73-day-1-login-system-master(1).zip.e89\pahasarastudioFP\src\main\resources\images" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="lk.ijse.pahasarastudiofp.dto.tm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Initializer">
+    <configuration name="Appinizializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.pahasarastudiofp.Appinizializer" />
+      <module name="pahasarastudioFP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.pahasarastudiofp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Initializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.pahasarastudiofp.Initializer" />
+      <module name="SupermarketFx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.pahasarastudiofp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Initializer" />
+        <item itemvalue="Application.Appinizializer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df55b524-48b5-4780-a365-216645949b08" name="Changes" comment="" />
+      <created>1745705244367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745705244367</updated>
+      <workItem from="1745808179912" duration="27000" />
+      <workItem from="1745975987827" duration="605000" />
+      <workItem from="1746216792441" duration="657000" />
+      <workItem from="1746217890059" duration="25744000" />
+      <workItem from="1746327084468" duration="3233000" />
+      <workItem from="1746331606070" duration="18228000" />
+      <workItem from="1746352819153" duration="320000" />
+      <workItem from="1746838774887" duration="11519000" />
+      <workItem from="1747117559053" duration="8043000" />
+      <workItem from="1747135548273" duration="8905000" />
+      <workItem from="1747168153111" duration="7070000" />
+      <workItem from="1747200028342" duration="2435000" />
+      <workItem from="1747217247593" duration="3454000" />
+      <workItem from="1747279007873" duration="8941000" />
+      <workItem from="1747293799656" duration="836000" />
+      <workItem from="1747376619930" duration="8667000" />
+      <workItem from="1747451730554" duration="9106000" />
+      <workItem from="1747489203646" duration="8649000" />
+      <workItem from="1747544006505" duration="6414000" />
+      <workItem from="1747550482070" duration="2723000" />
+      <workItem from="1747626283708" duration="9418000" />
+      <workItem from="1747636714839" duration="3954000" />
+      <workItem from="1747712429241" duration="45000" />
+      <workItem from="1747750319116" duration="1638000" />
+      <workItem from="1747800225230" duration="363000" />
+      <workItem from="1747885057211" duration="5109000" />
+      <workItem from="1747969523045" duration="5380000" />
+      <workItem from="1747984765037" duration="745000" />
+      <workItem from="1747985525592" duration="159000" />
+      <workItem from="1747985851360" duration="896000" />
+      <workItem from="1747986769903" duration="412000" />
+      <workItem from="1748057790342" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2nd one" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd one" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

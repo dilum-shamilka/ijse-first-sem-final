@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pahasarastudiofp.controller.AppointmentPackageController">
+    <children>
+        <GridPane layoutX="31.0" layoutY="31.0" prefHeight="113.0" prefWidth="539.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Package Name:" />
+                <TextField fx:id="txtPackageName" GridPane.columnIndex="1" />
+                <Label text="Price:" GridPane.rowIndex="1" />
+                <TextField fx:id="txtPrice" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <HBox layoutX="35.0" layoutY="162.0" spacing="10.0">
+            <children>
+                <Button fx:id="btnSavePackage" mnemonicParsing="false" onAction="#btnSavePackageOnAction" text="Save" />
+                <Button fx:id="btnUpdatePackage" mnemonicParsing="false" onAction="#btnUpdatePackageOnAction" text="Update" />
+                <Button fx:id="btnDeletePackage" mnemonicParsing="false" onAction="#btnDeletePackageOnAction" text="Delete" />
+                <Button fx:id="btnResetPackage" mnemonicParsing="false" onAction="#btnResetPackageOnAction" text="Reset" />
+            </children>
+        </HBox>
+        <TableView fx:id="tblPackages" layoutX="34.0" layoutY="212.0" prefHeight="200.0" prefWidth="539.0">
+            <columns>
+                <TableColumn fx:id="colPackageId" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="colPackageName" prefWidth="250.0" text="Package Name" />
+                <TableColumn fx:id="colPrice" prefWidth="237.59999389648442" text="Price" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

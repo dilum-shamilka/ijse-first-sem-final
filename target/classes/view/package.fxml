@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="600.0" prefWidth="817.0" style="-fx-background-color: linear-gradient(to bottom right, #ADD8E6, #6A5ACD);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pahasarastudiofp.controller.PackagePageController">
+    <children>
+        <GridPane hgap="15" style="-fx-background-color: transparent;" vgap="15" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="70.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="250.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label style="-fx-font-weight: 600; -fx-font-size: 14px; -fx-text-fill: #FFFFFF;" text="Name :" />
+                <Label style="-fx-font-weight: 600; -fx-font-size: 14px; -fx-text-fill: #FFFFFF;" text="Description :" GridPane.rowIndex="1" />
+                <TextField fx:id="txtName" promptText="Enter package name" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-border-color: #D3D3D3; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 0 10 0 10; -fx-font-size: 14px;" GridPane.columnIndex="1" />
+                <TextArea fx:id="txtDescription" prefHeight="60.0" promptText="Enter package description" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-border-color: #D3D3D3; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10; -fx-font-size: 14px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <HBox alignment="CENTER_LEFT" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <Button fx:id="btnSavePackage" mnemonicParsing="false" onAction="#btnSaveOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Save">
+                        <effect>
+                            <DropShadow color="#388E3C" radius="6" />
+                        </effect>
+                    </Button>
+                    <Button fx:id="btnUpdatePackage" disable="true" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Update">
+                        <effect>
+                            <DropShadow color="#1976D2" radius="6" />
+                        </effect>
+                    </Button>
+                    <Button fx:id="btnDeletePackage" disable="true" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Delete">
+                        <effect>
+                            <DropShadow color="#D32F2F" radius="6" />
+                        </effect>
+                    </Button>
+                    <Button fx:id="btnResetPackage" mnemonicParsing="false" onAction="#btnResetOnAction" style="-fx-background-color: #78909C; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Reset">
+                        <effect>
+                            <DropShadow color="#546E7A" radius="6" />
+                        </effect>
+                    </Button>
+                </HBox>
+                <Label style="-fx-font-size: 18px; -fx-font-weight: 700; -fx-text-fill: #FFFFFF;" text="Package Table" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+
+        <TableView fx:id="tblPackages" style="-fx-background-color: white; -fx-background-radius: 12; -fx-border-color: #D3D3D3; -fx-border-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 5,0,0,1);" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="280.0">
+            <columns>
+                <TableColumn fx:id="colPackageId" prefWidth="75.0" text="Package ID" />
+                <TableColumn fx:id="colName" prefWidth="200.0" text="Name" />
+                <TableColumn fx:id="colDescription" prefWidth="465.0" text="Description" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+
+        <Label layoutX="30.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: 700; -fx-text-fill: #FFFFFF;" text="Package Details" />
+    </children>
+</AnchorPane>

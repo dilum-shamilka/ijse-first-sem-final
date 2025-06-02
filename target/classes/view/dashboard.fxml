@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="780.0" prefWidth="950.0" style="-fx-background-color: linear-gradient(to bottom right, #4a00e0, #8e2de2);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pahasarastudiofp.controller.DashboardController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="70.0" style="-fx-background-color: #3700b3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="Pahasara Studio" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                    <effect>
+                        <DropShadow color="#0000004d" radius="4.0" spread="0.1" />
+                    </effect>
+                </Label>
+            </children>
+        </HBox>
+
+        <VBox alignment="TOP_CENTER" layoutY="70.0" prefWidth="240.0" spacing="10.0" style="-fx-background-color: #5e35b1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+            <children>
+                <Button onAction="#openUserPage" prefHeight="38.0" prefWidth="180.0" text="Users">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openCustomerPage" prefHeight="38.0" prefWidth="180.0" text="Customers">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openEmployeePage" prefHeight="38.0" prefWidth="180.0" text="Employees">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openServicePage" prefHeight="38.0" prefWidth="180.0" text="Services">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openPackagePage" prefHeight="38.0" prefWidth="180.0" text="Packages">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openAppointmentPage" prefHeight="38.0" prefWidth="180.0" text="Appointments">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openInvoicePage" prefHeight="38.0" prefWidth="180.0" text="Invoices">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openPaymentDetailsPage" prefHeight="38.0" prefWidth="180.0" text="Payment Details">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openDiscountPage" prefHeight="38.0" prefWidth="180.0" text="Discounts">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openExpensesPage" prefHeight="38.0" prefWidth="180.0" text="Expenses">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openEventLocationPage" prefHeight="38.0" prefWidth="180.0" text="Event Locations">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openCustomerFeedbackPage" prefHeight="38.0" prefWidth="180.0" text="Customer Feedback">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openPackageServicePage" prefHeight="38.0" prefWidth="180.0" text="Package Services">
+                    <style>-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;</style>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#logout" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #F44336; -fx-text-fill: WHITE; -fx-background-radius: 5; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 15px; -fx-border-color: #D32F2F; -fx-border-width: 0.8;" text="Logout">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                    <VBox.margin>
+                        <Insets top="25.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+            <effect>
+                <InnerShadow choke="0.05" color="#0000001a" height="30.0" radius="14.5" width="30.0" />
+            </effect>
+        </VBox>
+
+        <AnchorPane layoutX="240.0" layoutY="70.0" prefHeight="710.0" style="-fx-background-color: white; -fx-background-radius: 0 10 10 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+            <effect>
+                <DropShadow color="#00000022" radius="8.0" width="8.0" />
+            </effect>
+            <padding>
+                <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+            </padding>
+            <children>
+                <Label layoutX="20.0" layoutY="20.0" text="Welcome to Pahasara Studio Dashboard!" textFill="#1a1a1a">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Label layoutX="20.0" layoutY="50.0" text="Select an option from the sidebar to manage your data." textFill="#555555">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+
+                <VBox layoutX="20.0" layoutY="120.0" spacing="8.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8; -fx-border-color: #D3D3D3; -fx-border-width: 1;" AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">
+                    <padding>
+                        <Insets bottom="12.0" left="15.0" right="15.0" top="12.0" />
+                    </padding>
+                    <effect>
+                        <DropShadow color="#0000001a" height="4.0" radius="1.5" width="4.0" />
+                    </effect>
+                    <children>
+                        <Label text="Customer Recommendations" textFill="#1a1a1a">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="4.0" />
+                            </VBox.margin>
+                        </Label>
+
+                        <Label text="&quot;Pahasara Studio captured our wedding day beautifully! Their attention to detail and creative eye resulted in stunning photos we'll cherish forever. Highly recommend their cinematic package.&quot;" textFill="#555555" wrapText="true">
+                            <font>
+                                <Font size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Janaka Pahasara" textFill="#888888">
+                            <font>
+                                <Font name="System Italic" size="11.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="8.0" />
+                            </VBox.margin>
+                        </Label>
+
+                        <Label text="&quot;The portrait session with the Pahasara team was an absolute delight. They were professional, made me feel incredibly comfortable, and truly brought out my best. The results speak for themselves!&quot;" textFill="#555555" wrapText="true">
+                            <font>
+                                <Font size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Dilum Shamilka" textFill="#888888">
+                            <font>
+                                <Font name="System Italic" size="11.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="8.0" />
+                            </VBox.margin>
+                        </Label>
+
+                        <Label text="&quot;Pahasara Studio provided excellent coverage for our annual corporate event. The team was discreet, efficient, and captured all the key moments. The photos were delivered on time and exceeded our expectations.&quot;" textFill="#555555" wrapText="true">
+                            <font>
+                                <Font size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Ashan Chinthana " textFill="#888888">
+                            <font>
+                                <Font name="System Italic" size="11.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="8.0" />
+                            </VBox.margin>
+                        </Label>
+
+                        <Label text="&quot;Our family photoshoot was chaotic with two toddlers, but the Pahasara Kids &amp; Family team handled it with such patience and humor. The photos are vibrant and perfectly capture our family's joy.&quot;" textFill="#555555" wrapText="true">
+                            <font>
+                                <Font size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Himasha Dinelka" textFill="#888888">
+                            <font>
+                                <Font name="System Italic" size="11.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="8.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                </VBox>
+
+                <VBox layoutX="20.0" layoutY="460.0" spacing="6.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 8; -fx-border-color: #D3D3D3; -fx-border-width: 1;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="460.0">
+                    <padding>
+                        <Insets bottom="12.0" left="15.0" right="15.0" top="12.0" />
+                    </padding>
+                    <effect>
+                        <DropShadow color="#0000001a" height="4.0" radius="1.5" width="4.0" />
+                    </effect>
+                    <children>
+                        <Label text="Our Photography Teams" textFill="#1a1a1a">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="4.0" />
+                            </VBox.margin>
+                        </Label>
+
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="• Wedding Photography Team:" textFill="#555555">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label text="Capturing your special day with timeless elegance." textFill="#888888">
+                                <font>
+                                    <Font size="12.0" />
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="• Portrait Innovations Team:" textFill="#555555">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label text="Crafting unique and expressive personal portraits." textFill="#888888">
+                                <font>
+                                    <Font size="12.0" />
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="• Event Capture Squad:" textFill="#555555">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label text="Seamless coverage for corporate and social events." textFill="#888888">
+                                <font>
+                                    <Font size="12.0" />
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="• Commercial Visionaries Team:" textFill="#555555">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label text="High-impact visuals for your business and products." textFill="#888888">
+                                <font>
+                                    <Font size="12.0" />
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="• Aerial &amp; Drone Specialists:" textFill="#555555">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label text="Stunning perspectives from above." textFill="#888888">
+                                <font>
+                                    <Font size="12.0" />
+                                </font>
+                            </Label>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="• Fine Art &amp; Creative Collective:" textFill="#555555">
+                                <font>
+                                    <Font name="System Bold" size="12.0" />
+                                </font>
+                            </Label>
+                            <Label text="Unique and artistic photographic expressions." textFill="#888888">
+                                <font>
+                                    <Font size="12.0" />
+                                </font>
+                            </Label>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

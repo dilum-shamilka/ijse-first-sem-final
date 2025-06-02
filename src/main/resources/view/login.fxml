@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="598.0" style="-fx-background-color: linear-gradient(to bottom, #d1e7f0, #a8daed);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pahasarastudiofp.controller.LoginController">
+    <children>
+        <Label layoutX="50.0" layoutY="30.0" text="Pahasara Studio Login" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="-50.0" AnchorPane.topAnchor="30.0" style="-fx-text-fill: #2c3e50;">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label text="Username:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="150.0" style="-fx-text-fill: #34495e;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtUsername" promptText="Enter username" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="150.0" style="-fx-background-color: white; -fx-border-color: #bdc3c7; -fx-border-radius: 5; -fx-padding: 5;" />
+        <Label text="Password:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="200.0" style="-fx-text-fill: #34495e;">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="txtPassword" promptText="Enter password" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="200.0" style="-fx-background-color: white; -fx-border-color: #bdc3c7; -fx-border-radius: 5; -fx-padding: 5;" />
+        <Button layoutX="397.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnLoginOnAction" text="Login" AnchorPane.bottomAnchor="68.39999999999998" AnchorPane.leftAnchor="397.0" AnchorPane.rightAnchor="103.79999999999995" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-border-radius: 5;" />
+    </children>
+</AnchorPane>

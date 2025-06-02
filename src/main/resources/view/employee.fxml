@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to bottom right, #ADD8E6, #6A5ACD);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pahasarastudiofp.controller.EmployeePageController">
+    <children>
+        <Label layoutX="30.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: 700; -fx-text-fill: #FFFFFF;" text="Employee Details" />
+
+        <GridPane hgap="15" style="-fx-background-color: transparent;" vgap="15" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="70.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label style="-fx-font-weight: 600; -fx-font-size: 14px; -fx-text-fill: #FFFFFF;" text="Employee Name:" />
+                <TextField fx:id="txtName" promptText="Enter Employee Name" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-border-color: #D3D3D3; -fx-border-radius: 8; -fx-background-radius: 8; -fx-font-size: 14px;" GridPane.columnIndex="1" />
+
+                <Label style="-fx-font-weight: 600; -fx-font-size: 14px; -fx-text-fill: #FFFFFF;" text="Description:" GridPane.rowIndex="1" />
+                <TextArea fx:id="txtDescription" promptText="Enter Employee Description" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-border-color: #D3D3D3; -fx-border-radius: 8; -fx-background-radius: 8; -fx-font-size: 14px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+
+        <HBox alignment="CENTER_LEFT" spacing="15.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="190.0" />
+
+        <TableView fx:id="tblEmployees" layoutX="11.2" prefHeight="293.0" prefWidth="762.0" style="-fx-background-color: white; -fx-background-radius: 12; -fx-border-color: #D3D3D3; -fx-border-radius: 12; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 5,0,0,1);" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="280.0">
+            <columns>
+                <TableColumn fx:id="colEmployeeId" prefWidth="100.0" text="Employee ID" />
+                <TableColumn fx:id="colName" prefWidth="250.0" text="Name" />
+                <TableColumn fx:id="colDescription" prefWidth="400.0" text="Description" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+
+        <Label layoutX="30.0" layoutY="226.0" prefHeight="46.0" prefWidth="117.0" style="-fx-font-size: 18px; -fx-font-weight: 700; -fx-text-fill: #FFFFFF;" text="Employee List" />
+        <Button fx:id="btnSaveEmployee" layoutX="191.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnSaveOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Save Employee">
+            <effect>
+                <DropShadow color="#388E3C" radius="6" />
+            </effect>
+        </Button>
+        <Button fx:id="btnUpdateEmployee" layoutX="350.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Update Employee">
+            <effect>
+                <DropShadow color="#1976D2" radius="6" />
+            </effect>
+        </Button>
+        <Button fx:id="btnDeleteEmployee" layoutX="519.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: #F44336; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Delete Employee">
+            <effect>
+                <DropShadow color="#D32F2F" radius="6" />
+            </effect>
+        </Button>
+        <Button fx:id="btnResetEmployee" layoutX="673.0" layoutY="234.0" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: #78909C; -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 8 20 8 20; -fx-font-weight: 600; -fx-cursor: hand;" text="Reset">
+            <effect>
+                <DropShadow color="#546E7A" radius="6" />
+            </effect>
+        </Button>
+    </children>
+</AnchorPane>
