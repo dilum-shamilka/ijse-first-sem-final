@@ -5,15 +5,11 @@
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="lk.ijse.pahasarastudiofp.controller.EmailController"
-            prefWidth="400" prefHeight="400">
-
-    <VBox spacing="10" alignment="CENTER" layoutX="30" layoutY="30" prefWidth="340" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
-        <Label text="Send Email" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
-        <TextField fx:id="txtTo" promptText="Recipient Email"/>
-        <TextField fx:id="txtSubject" promptText="Subject"/>
-        <TextArea fx:id="txtMessage" promptText="Message" prefRowCount="10"/>
-        <Button text="Send" onAction="#onSendEmail"/>
-        <Label fx:id="lblStatus"/>
-    </VBox>
+            prefWidth="400" prefHeight="400"
+            style="-fx-background-color: linear-gradient(to right bottom, #8A2BE2, #4169E1);"> <VBox spacing="10" alignment="CENTER" layoutX="30" layoutY="30" prefWidth="340" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                                                                                                     style="-fx-background-color: rgba(255, 255, 255, 0.8); -fx-padding: 20; -fx-border-radius: 15; -fx-background-radius: 15;">
+    <Label text="Send Email" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #4169E1;"/> <TextField fx:id="txtTo" promptText="Recipient Email" style="-fx-background-color: #E6E6FA; -fx-prompt-text-fill: #6A5ACD;"/> <TextField fx:id="txtSubject" promptText="Subject" style="-fx-background-color: #E6E6FA; -fx-prompt-text-fill: #6A5ACD;"/>
+    <TextArea fx:id="txtMessage" promptText="Message" prefRowCount="10" style="-fx-background-color: #E6E6FA; -fx-prompt-text-fill: #6A5ACD;"/>
+    <Button text="Send" onAction="#onSendEmail" style="-fx-background-color: #6A5ACD; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 20; -fx-background-radius: 5;"/> <Label fx:id="lblStatus" style="-fx-text-fill: #6A5ACD;"/> </VBox>
 
 </AnchorPane>
