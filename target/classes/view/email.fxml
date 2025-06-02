@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="lk.ijse.pahasarastudiofp.controller.EmailController"
+            prefWidth="400" prefHeight="400">
+
+    <VBox spacing="10" alignment="CENTER" layoutX="30" layoutY="30" prefWidth="340" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+        <Label text="Send Email" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <TextField fx:id="txtTo" promptText="Recipient Email"/>
+        <TextField fx:id="txtSubject" promptText="Subject"/>
+        <TextArea fx:id="txtMessage" promptText="Message" prefRowCount="10"/>
+        <Button text="Send" onAction="#onSendEmail"/>
+        <Label fx:id="lblStatus"/>
+    </VBox>
+
+</AnchorPane>
