@@ -143,17 +143,17 @@ public class DashboardController {
 
             URL fxmlUrl = getClass().getResource("/view/" + fxmlFileName);
             if (fxmlUrl == null) {
-                // Log an error if the FXML file is not found
+
                 System.err.println("Error: FXML file not found at /view/" + fxmlFileName);
                 throw new IOException("FXML file not found: " + fxmlFileName);
             }
 
             Parent root = FXMLLoader.load(Objects.requireNonNull(fxmlUrl));
 
-            // Create a new stage
+
             Stage stage = new Stage();
-            stage.setTitle(title); // Set the title of the stage
-            stage.setScene(new Scene(root)); // Set the scene
+            stage.setTitle(title);
+            stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
 
