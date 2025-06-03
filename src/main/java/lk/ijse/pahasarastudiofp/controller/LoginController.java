@@ -34,7 +34,7 @@ public class LoginController {
                 Scene scene = new Scene(root);
                 stage.setTitle("Pahasara Studio Management System");
                 stage.setScene(scene);
-                stage.setMaximized(true); // Maximize the dashboard
+                stage.setMaximized(true);
                 stage.show();
 
             } catch (IOException e) {
