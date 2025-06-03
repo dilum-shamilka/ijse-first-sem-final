@@ -23,7 +23,7 @@ public class DiscountModel {
                     rst.getInt("discount_id"),
                     rst.getString("discount_name"),
                     rst.getDouble("discount_percentage"),
-                    rst.getDouble("discount_amount") // Added to constructor
+                    rst.getDouble("discount_amount")
             );
         }
         return null;
@@ -52,7 +52,7 @@ public class DiscountModel {
         PreparedStatement pstm = connection.prepareStatement(sql);
         pstm.setString(1, discountDTO.getName());
         pstm.setDouble(2, discountDTO.getPercentage());
-        pstm.setDouble(3, discountDTO.getAmount()); // Corrected to setDouble
+        pstm.setDouble(3, discountDTO.getAmount());
         int affectedRows = pstm.executeUpdate();
         return affectedRows > 0;
     }
@@ -63,13 +63,13 @@ public class DiscountModel {
         PreparedStatement pstm = connection.prepareStatement(sql);
         pstm.setString(1, discountDTO.getName());
         pstm.setDouble(2, discountDTO.getPercentage());
-        pstm.setDouble(3, discountDTO.getAmount()); // Corrected to setDouble
+        pstm.setDouble(3, discountDTO.getAmount());
         pstm.setInt(4, discountDTO.getDiscountId());
         int affectedRows = pstm.executeUpdate();
         return affectedRows > 0;
     }
 
-    public boolean deleteDiscount(int discountId) throws SQLException, ClassNotFoundException{ // Added Exception
+    public boolean deleteDiscount(int discountId) throws SQLException, ClassNotFoundException{
         Connection connection = DBConnection.getInstance().getConnection();
         String sql = "DELETE FROM discount WHERE discount_id=?";
         PreparedStatement pstm = connection.prepareStatement(sql);
