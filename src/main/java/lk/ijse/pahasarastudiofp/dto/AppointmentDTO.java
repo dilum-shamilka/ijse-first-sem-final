@@ -6,7 +6,7 @@ public class AppointmentDTO {
     private int appointmentId;
     private int customerId;
     private int packageId;
-    private String name; // This is the specific name/description of the appointment
+    private String name;
 
     public AppointmentDTO() {
     }
@@ -18,7 +18,7 @@ public class AppointmentDTO {
         this.name = name;
     }
 
-    // Getters and Setters
+
     public int getAppointmentId() {
         return appointmentId;
     }

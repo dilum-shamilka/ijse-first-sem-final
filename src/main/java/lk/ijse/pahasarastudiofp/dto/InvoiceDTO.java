@@ -7,7 +7,7 @@ public class InvoiceDTO {
     private int appointmentId;
     private Date date;
     private double amount;
-    private Integer reportId; // Changed to Integer to allow null values
+    private Integer reportId;
 
     public InvoiceDTO(int invoiceId, int appointmentId, Date date, double amount, Integer reportId) { // Changed parameter type
         this.invoiceId = invoiceId;

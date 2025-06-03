@@ -20,7 +20,6 @@ public class Initializer extends Application {
     public void start(Stage primaryStage) throws IOException {
         try {
 
-            // Try different paths to see which one works
             URL dashboardURL1 = getClass().getResource("/view/dashboard.fxml");
             System.out.println("Trying path 1: " + dashboardURL1);
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/login.fxml")));
@@ -33,8 +32,8 @@ public class Initializer extends Application {
         } catch (IOException e) {
             e.printStackTrace();
 
-            // Load the login screen first
-            URL loginURL = getClass().getResource("/view/login.fxml"); // Assuming your login FXML is named login.fxml
+
+            URL loginURL = getClass().getResource("/view/login.fxml");
             if (loginURL == null) {
                 System.err.println("Error: login.fxml not found. Please ensure it's in src/main/resources/view/");
                 return;
@@ -42,9 +41,9 @@ public class Initializer extends Application {
 
             Parent root = FXMLLoader.load(Objects.requireNonNull(loginURL));
             Scene scene = new Scene(root);
-            primaryStage.setTitle("Pahasara Studio Management System - Login"); // Set a title for the login window
+            primaryStage.setTitle("Pahasara Studio Management System - Login");
             primaryStage.setScene(scene);
-            primaryStage.setResizable(false); // Often good to make login windows not resizable
+            primaryStage.setResizable(false);
             primaryStage.show();
 
 

@@ -13,8 +13,8 @@ import lk.ijse.pahasarastudiofp.dto.CustomerDTO;
 import lk.ijse.pahasarastudiofp.dto.PackageDTO;
 import lk.ijse.pahasarastudiofp.dto.tm.AppointmentTM;
 import lk.ijse.pahasarastudiofp.model.AppointmentModel;
-import lk.ijse.pahasarastudiofp.model.CustomerModel; // Needed for loading customer IDs
-import lk.ijse.pahasarastudiofp.model.PackageModel;   // Needed for loading package IDs
+import lk.ijse.pahasarastudiofp.model.CustomerModel;
+import lk.ijse.pahasarastudiofp.model.PackageModel;
 
 import java.net.URL;
 import java.sql.SQLException;
