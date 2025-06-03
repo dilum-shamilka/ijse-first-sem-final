@@ -79,7 +79,7 @@ public class DashboardController {
         loadAndShowStage("serviceemployee.fxml", "Employee Service Management");
     }
 
-    // New method to open the Email Sender Form
+
     public void openEmailSenderPage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("email.fxml", "Send Email");
     }
