@@ -8,8 +8,19 @@ import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.application.Platform;
+import lk.ijse.pahasarastudiofp.db.DBConnection;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.view.JasperViewer;
+
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 public class DashboardController {
@@ -91,7 +102,24 @@ public class DashboardController {
 
 
     public void openReportPage(ActionEvent actionEvent) throws IOException {
-        loadAndShowStage("customer.jrxml", "Reports");
+        try {
+            JasperReport report = JasperCompileManager.compileReport(
+                    getClass().getResourceAsStream("/Report/customer.jrxml")
+            );
+            Connection connection = DBConnection.getInstance().getConnection();
+            Map<String, Object> parameters = new HashMap<>();
+            parameters.put("P_DATE", LocalDate.now().toString());
+            JasperPrint jasperPrint = JasperFillManager.fillReport(
+                    report,
+                    parameters,
+                    connection
+            );
+            JasperViewer.viewReport(jasperPrint, false);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 
