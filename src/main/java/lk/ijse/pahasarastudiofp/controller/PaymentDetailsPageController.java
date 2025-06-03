@@ -52,7 +52,7 @@ public class PaymentDetailsPageController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        initializeComboBoxes(); //load appointment ids
+        initializeComboBoxes();
         setCellValueFactory();
         loadAllPayments();
         addTableSelectionListener();
@@ -63,7 +63,7 @@ public class PaymentDetailsPageController implements Initializable {
     private void initializeComboBoxes() {
         try {
             List<AppointmentDTO> allAppointments = appointmentModel.getAllAppointments();
-            cmbAppointmentId.getItems().clear(); // Clear any previous items
+            cmbAppointmentId.getItems().clear();
             for (AppointmentDTO appointmentDTO : allAppointments) {
                 cmbAppointmentId.getItems().add(appointmentDTO.getAppointmentId());
             }

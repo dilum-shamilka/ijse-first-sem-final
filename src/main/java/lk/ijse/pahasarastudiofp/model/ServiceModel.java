@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ServiceModel {
 
-    //  Get Service IDs
+
     public static List<String> getServiceIds() throws SQLException, ClassNotFoundException {
         Connection connection = null;
         PreparedStatement pstm = null;
@@ -35,7 +35,7 @@ public class ServiceModel {
         return ids;
     }
 
-    //  Get Service Name
+
     public static String getServiceName(String serviceId) throws SQLException, ClassNotFoundException {
         Connection connection = null;
         PreparedStatement pstm = null;
@@ -59,7 +59,7 @@ public class ServiceModel {
         return serviceName;
     }
 
-    //  Save Service
+
     public boolean saveService(ServiceDTO dto) throws SQLException, ClassNotFoundException {
         Connection connection = null;
         PreparedStatement pstm = null;
@@ -80,7 +80,7 @@ public class ServiceModel {
         }
     }
 
-    // Update Service
+
     public boolean updateService(ServiceDTO dto) throws SQLException, ClassNotFoundException {
         Connection connection = null;
         PreparedStatement pstm = null;
@@ -102,7 +102,7 @@ public class ServiceModel {
         }
     }
 
-    //  Delete Service
+
     public boolean deleteService(int id) throws SQLException, ClassNotFoundException {
         Connection connection = null;
         PreparedStatement pstm = null;
@@ -121,7 +121,7 @@ public class ServiceModel {
         }
     }
 
-    //  Get All Services
+
     public ArrayList<ServiceDTO> getAllServices() throws SQLException, ClassNotFoundException {
         Connection connection = null;
         PreparedStatement pstm = null;
@@ -142,14 +142,14 @@ public class ServiceModel {
             }
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-            throw e; // Re-throw the exception
+            throw e;
         } finally {
             closeResources(connection, pstm, rst);
         }
         return (ArrayList<ServiceDTO>) services;
     }
 
-    //  Get Service
+
     public ServiceDTO getService(int id) throws SQLException, ClassNotFoundException {
         Connection connection = null;
         PreparedStatement pstm = null;
@@ -178,7 +178,7 @@ public class ServiceModel {
         return serviceDTO;
     }
 
-    //  Helper method to close resources
+
     private static void closeResources(Connection connection, PreparedStatement pstm, ResultSet rs) {
         try {
             if (rs != null) {

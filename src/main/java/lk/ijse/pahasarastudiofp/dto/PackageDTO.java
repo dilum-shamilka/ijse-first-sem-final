@@ -14,7 +14,7 @@ public class PackageDTO {
         this.description = description;
     }
 
-    // Getters and Setters
+
     public int getPackageId() {
         return packageId;
     }

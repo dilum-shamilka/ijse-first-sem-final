@@ -18,7 +18,7 @@ public class EmailModel {
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable", "true");   // TLS
+        props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", MAILTRAP_HOST);
         props.put("mail.smtp.port", String.valueOf(MAILTRAP_PORT));
 
@@ -30,7 +30,7 @@ public class EmailModel {
         });
 
         Message message = new MimeMessage(session);
-        message.setFrom(new InternetAddress("demo@pahasarastudio.local")); // any sender
+        message.setFrom(new InternetAddress("demo@pahasarastudio.local"));
         message.setRecipients(Message.RecipientType.TO,
                 InternetAddress.parse(dto.getTo()));
         message.setSubject(dto.getSubject());

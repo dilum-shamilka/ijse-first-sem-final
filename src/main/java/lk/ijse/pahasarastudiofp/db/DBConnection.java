@@ -12,8 +12,8 @@ public class DBConnection {
 
 
     private DBConnection() throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.cj.jdbc.Driver"); // Load MySQL JDBC driver
-        // Establish initial connection using your database credentials
+        Class.forName("com.mysql.cj.jdbc.Driver");
+
         connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/myproject", "root", "dilum123");
     }
 
@@ -29,7 +29,7 @@ public class DBConnection {
 
     public Connection getConnection() throws SQLException, ClassNotFoundException {
         if (connection == null || connection.isClosed()) {
-            // Re-initialize the connection of the *existing* singleton instance
+
             this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/myproject", "root", "dilum123");
         }
         return connection;

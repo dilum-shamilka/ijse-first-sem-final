@@ -22,7 +22,7 @@ public class AppointmentTM {
         this.packageName = packageName;
     }
 
-    // Getters and Setters
+
     public int getAppointmentId() {
         return appointmentId;
     }

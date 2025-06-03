@@ -16,7 +16,6 @@ public class ExpensesDTO {
         this.description = description;
     }
 
-    // Getters and Setters
     public int getExpensesId() {
         return expensesId;
     }

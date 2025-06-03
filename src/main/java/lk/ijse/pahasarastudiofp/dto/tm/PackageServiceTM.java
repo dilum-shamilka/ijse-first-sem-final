@@ -4,9 +4,8 @@ public class PackageServiceTM {
     private int packageServiceId;
     private int packageId;
     private int serviceId;
-    private String packageName;   // For display
-    private String serviceName;   // For display
-
+    private String packageName;
+    private String serviceName;
 
     public PackageServiceTM() {
     }
@@ -19,7 +18,6 @@ public class PackageServiceTM {
         this.serviceName = serviceName;
     }
 
-    // Getters and Setters
     public int getPackageServiceId() {
         return packageServiceId;
     }

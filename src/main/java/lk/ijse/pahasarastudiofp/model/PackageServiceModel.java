@@ -84,18 +84,4 @@ public class PackageServiceModel {
         return packageServices;
     }
 
-
-
-    // Methods to get names for display (you'll need PackageModel and ServiceModel)
-//    public String getPackageName(int packageId) throws SQLException, ClassNotFoundException {
-//        PackageModel packageModel = new PackageModel();
-//        PackageDTO packageDTO = packageModel.getPackage(packageId);
-//        return (packageDTO != null) ? packageDTO.getName() : null;
-//    }
-//
-//    public String getServiceName(int serviceId) throws SQLException, ClassNotFoundException {
-//        ServiceModel serviceModel = new ServiceModel();
-//        ServiceDTO serviceDTO = serviceModel.getService(serviceId);
-//        return (serviceDTO != null) ? serviceDTO.getName() : null;
-//    }
 }

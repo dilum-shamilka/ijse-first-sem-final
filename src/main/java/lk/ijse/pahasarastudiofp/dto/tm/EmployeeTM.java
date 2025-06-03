@@ -14,7 +14,7 @@ public class EmployeeTM {
         this.description = description;
     }
 
-    // Getters and Setters
+
     public int getEmployeeId() {
         return employeeId;
     }

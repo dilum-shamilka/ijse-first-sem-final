@@ -16,7 +16,7 @@ public class DiscountTM {
         this.amount = amount;
     }
 
-    // Getters and Setters
+
     public int getDiscountId() {
         return discountId;
     }

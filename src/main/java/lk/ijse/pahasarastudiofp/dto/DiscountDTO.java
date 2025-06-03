@@ -22,7 +22,6 @@ public class DiscountDTO {
         this.discountName = discountName;
     }
 
-    // Getters and Setters
     public int getDiscountId() {
         return discountId;
     }

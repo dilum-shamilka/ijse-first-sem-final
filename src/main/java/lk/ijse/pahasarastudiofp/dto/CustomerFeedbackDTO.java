@@ -16,7 +16,6 @@ public class CustomerFeedbackDTO {
         this.rating = rating;
     }
 
-    // Getters and Setters
     public int getFeedbackId() {
         return feedbackId;
     }

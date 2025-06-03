@@ -29,7 +29,7 @@ public class LoginController {
 
                 Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-                // Load the dashboard FXML
+
                 Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/dashboard.fxml")));
                 Scene scene = new Scene(root);
                 stage.setTitle("Pahasara Studio Management System");

@@ -63,7 +63,7 @@ public class UserPageController implements Initializable {
         cmbRole.getItems().addAll("owner", "cashier");
         setCellValueFactory();
         loadAllUsers();
-        clearFields(); // Ensures buttons are disabled initially
+        clearFields();
 
         tblUsers.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {

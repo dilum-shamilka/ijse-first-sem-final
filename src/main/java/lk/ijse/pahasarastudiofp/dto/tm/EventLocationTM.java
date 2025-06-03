@@ -16,7 +16,6 @@ public class EventLocationTM {
         this.venueType = venueType;
     }
 
-    // Getters and Setters
     public int getEventId() {
         return eventId;
     }

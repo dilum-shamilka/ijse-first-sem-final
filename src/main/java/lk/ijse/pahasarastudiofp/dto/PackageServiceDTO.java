@@ -4,7 +4,7 @@ public class PackageServiceDTO {
     private int packageServiceId;
     private int packageId;
     private int serviceId;
-    // Add fields for additional attributes if any
+
 
     public PackageServiceDTO() {
     }

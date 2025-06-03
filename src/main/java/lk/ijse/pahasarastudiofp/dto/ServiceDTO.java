@@ -2,7 +2,7 @@ package lk.ijse.pahasarastudiofp.dto;
 
 public class ServiceDTO {
     private int serviceId;
-    private int packageId; // You might manage package services within the package management
+    private int packageId;
     private String name;
     private double price;
 

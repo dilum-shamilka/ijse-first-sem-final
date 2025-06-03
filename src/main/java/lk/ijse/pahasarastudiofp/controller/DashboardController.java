@@ -7,8 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.application.Platform; // IMPORTANT: Import Platform for exit()
-
+import javafx.application.Platform;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Objects;

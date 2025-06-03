@@ -28,7 +28,7 @@ public class EmailTM {
         return message;
     }
 
-    // Getters and setters
+
     public String getTo() {
         return to.get();
     }

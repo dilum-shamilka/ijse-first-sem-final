@@ -256,7 +256,7 @@ public class CustomerFeedbackPageController implements Initializable {
     private void clearFields() {
         cmbCustomerId.setValue(null);
         cmbAppointmentId.setValue(null);
-        spnRating.getValueFactory().setValue(3); // Reset to default rating
+        spnRating.getValueFactory().setValue(3);
         btnSaveFeedback.setDisable(false);
         btnUpdateFeedback.setDisable(true);
         btnDeleteFeedback.setDisable(true);

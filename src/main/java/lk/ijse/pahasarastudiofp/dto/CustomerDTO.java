@@ -20,7 +20,7 @@ public class CustomerDTO {
         this.address = address;
     }
 
-    // Getters and Setters
+
     public int getCustomerId() {
         return customerId;
     }

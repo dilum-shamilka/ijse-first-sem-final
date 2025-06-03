@@ -19,7 +19,6 @@ public class CustomerTM {
         this.address = address;
     }
 
-    // Getters and Setters
     public int getCustomerId() {
         return customerId;
     }

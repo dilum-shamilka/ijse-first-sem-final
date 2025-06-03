@@ -20,7 +20,7 @@ public class CustomerFeedbackTM {
         this.appointmentName = appointmentName;
     }
 
-    // Getters and Setters
+
     public int getFeedbackId() {
         return feedbackId;
     }

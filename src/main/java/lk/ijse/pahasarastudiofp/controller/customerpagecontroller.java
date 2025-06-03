@@ -109,7 +109,7 @@ public class customerpagecontroller implements Initializable {
             return;
         }
 
-        CustomerDTO customerDTO = new CustomerDTO(0, name, email, contact, address); // ID will be auto-generated
+        CustomerDTO customerDTO = new CustomerDTO(0, name, email, contact, address);
 
         try {
             boolean isSaved = customerModel.saveCustomer(customerDTO);
@@ -133,7 +133,7 @@ public class customerpagecontroller implements Initializable {
         btnSaveClient.setDisable(false);
         btnUpdateClient.setDisable(true);
         btnDeleteClient.setDisable(true);
-        tblCustomers.getSelectionModel().clearSelection(); // Clear table selection
+        tblCustomers.getSelectionModel().clearSelection();
     }
 
     @FXML

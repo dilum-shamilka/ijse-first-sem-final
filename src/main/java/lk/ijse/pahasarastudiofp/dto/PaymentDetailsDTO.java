@@ -4,7 +4,7 @@ public class PaymentDetailsDTO {
     private int paymentId;
     private int appointmentId;
     private double amount;
-    // Removed: private String status;
+
 
     public PaymentDetailsDTO() {
     }

@@ -124,7 +124,7 @@ public class AppointmentModel {
             int affectedRowsAppointment = pstmAppointment.executeUpdate();
 
             if (affectedRowsAppointment == 0) {
-                DBConnection.getInstance().rollback(); // Appointment not deleted, rollback
+                DBConnection.getInstance().rollback();
                 return false;
             }
 

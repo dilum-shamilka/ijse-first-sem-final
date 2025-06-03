@@ -20,7 +20,7 @@ public class EmployeeDTO {
         this.employeeName = employeeName;
     }
 
-    // Getters and Setters
+
     public int getEmployeeId() {
         return employeeId;
     }

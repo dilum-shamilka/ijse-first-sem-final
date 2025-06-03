@@ -17,7 +17,7 @@ public class ExpensesTM {
         this.employeeName = employeeName;
     }
 
-    // Getters and Setters
+
     public int getExpensesId() {
         return expensesId;
     }
