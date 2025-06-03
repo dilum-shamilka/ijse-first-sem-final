@@ -29,7 +29,7 @@
             </children>
         </HBox>
 
-        <VBox alignment="TOP_CENTER" layoutY="70.0" prefWidth="240.0" spacing="10.0" style="-fx-background-color: #5e35b1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <VBox alignment="TOP_CENTER" layoutY="70.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #5e35b1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
             <padding>
                 <Insets top="20.0" />
             </padding>
@@ -160,6 +160,15 @@
                         </DropShadow>
                     </effect>
                 </Button>
+                <Button onAction="#openReportPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Reports">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
                 <Button onAction="#logout" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: #F44336; -fx-text-fill: WHITE; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D32F2F; -fx-border-width: 0.8;" text="Logout">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
@@ -169,8 +178,7 @@
                         </DropShadow>
                     </effect>
                     <VBox.margin>
-                        <Insets top="25.0" />
-                    </VBox.margin>
+                        <Insets top="5.0" /> </VBox.margin>
                 </Button>
             </children>
             <effect>
@@ -178,7 +186,7 @@
             </effect>
         </VBox>
 
-        <AnchorPane layoutX="240.0" layoutY="70.0" prefHeight="710.0" style="-fx-background-color: white; -fx-background-radius: 0 10 10 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <AnchorPane layoutX="200.0" layoutY="70.0" prefHeight="710.0" style="-fx-background-color: white; -fx-background-radius: 0 10 10 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
             <effect>
                 <DropShadow color="#00000022" radius="8.0" width="8.0" />
             </effect>

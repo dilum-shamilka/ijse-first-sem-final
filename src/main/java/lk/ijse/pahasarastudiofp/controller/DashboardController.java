@@ -27,6 +27,7 @@ public class DashboardController {
         loadAndShowStage("Appoinment.fxml", "Appointment Management");
     }
 
+
     public void openPackagePage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("package.fxml", "Package Management");
     }
@@ -39,13 +40,16 @@ public class DashboardController {
         loadAndShowStage("Invoice.fxml", "Invoice Management");
     }
 
+
     public void openDiscountPage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("DiscountsPage.fxml", "Discount Management");
     }
 
+
     public void openServicePage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("service.fxml", "Service Management");
     }
+
 
     public void openEmployeePage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("employee.fxml", "Employee Management");
@@ -55,28 +59,39 @@ public class DashboardController {
         loadAndShowStage("Expenses.fxml", "Expenses Management");
     }
 
+
     public void openEventLocationPage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("eventlocation.fxml", "Event Location Management");
     }
+
 
     public void openCustomerFeedbackPage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("Customerfeedback.fxml", "Customer Feedback Management");
     }
 
+
     public void openAppoinmentPackagePage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("appoinmentpackage.fxml", "Appointment Packages");
     }
+
 
     public void openAppoinmentEventLocationPage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("apoinmenteventlocation.fxml", "Appointment Locations");
     }
 
+
     public void openPackageServicePage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("packageservice.fxml", "Package Services");
     }
 
+
     public void openEmployeeServicePage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("serviceemployee.fxml", "Employee Service Management");
+    }
+
+
+    public void openReportPage(ActionEvent actionEvent) throws IOException {
+        loadAndShowStage("customer.jrxml", "Reports");
     }
 
 
@@ -87,13 +102,17 @@ public class DashboardController {
 
     public void logout(ActionEvent event) {
         try {
+
             Stage currentDashboardStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+
             URL goodbyeFxmlUrl = getClass().getResource("/view/Goodbye.fxml");
             if (goodbyeFxmlUrl == null) {
                 System.err.println("Error: Goodbye.fxml not found at /view/Goodbye.fxml. Check your resource path.");
                 return;
             }
             Parent goodbyeRoot = FXMLLoader.load(goodbyeFxmlUrl);
+
 
             Stage goodbyeStage = new Stage();
             goodbyeStage.setTitle("Farewell!");
@@ -103,12 +122,16 @@ public class DashboardController {
             System.out.println("Displaying goodbye window...");
             goodbyeStage.showAndWait();
             System.out.println("Goodbye window closed. Proceeding with application exit...");
+
             currentDashboardStage.close();
             System.out.println("Dashboard closed.");
+
+
             Platform.exit();
             System.out.println("Application exited.");
 
         } catch (IOException e) {
+
             e.printStackTrace();
             System.err.println("An error occurred during logout sequence: " + e.getMessage());
         }
@@ -120,15 +143,20 @@ public class DashboardController {
 
             URL fxmlUrl = getClass().getResource("/view/" + fxmlFileName);
             if (fxmlUrl == null) {
+                // Log an error if the FXML file is not found
                 System.err.println("Error: FXML file not found at /view/" + fxmlFileName);
                 throw new IOException("FXML file not found: " + fxmlFileName);
             }
+
             Parent root = FXMLLoader.load(Objects.requireNonNull(fxmlUrl));
+
+            // Create a new stage
             Stage stage = new Stage();
-            stage.setTitle(title);
-            stage.setScene(new Scene(root));
+            stage.setTitle(title); // Set the title of the stage
+            stage.setScene(new Scene(root)); // Set the scene
             stage.show();
         } catch (IOException e) {
+
             System.err.println("Error loading FXML: " + fxmlFileName);
             e.printStackTrace();
             throw e;

@@ -9,6 +9,7 @@ module lk.ijse.pahasarastudiofp {
     requires java.logging;
     requires java.xml;
     requires java.mail;
+    requires net.sf.jasperreports.core;
     opens lk.ijse.pahasarastudiofp.controller to javafx.fxml;
     opens lk.ijse.pahasarastudiofp.dto.tm to javafx.base;
     exports lk.ijse.pahasarastudiofp;

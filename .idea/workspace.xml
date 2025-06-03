@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df55b524-48b5-4780-a365-216645949b08" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/ReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/expenses.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/expenses.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/reportcontroller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/AppointmentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/AppointmentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +205,7 @@
       <workItem from="1748875100818" duration="9238000" />
       <workItem from="1748892747309" duration="2054000" />
       <workItem from="1748917599991" duration="1112000" />
-      <workItem from="1748923256040" duration="4310000" />
+      <workItem from="1748923256040" duration="6780000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -303,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748924784809</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1748927615332</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748927615332</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -108,7 +108,7 @@ public class AppointmentModel {
         Connection connection = null;
         try {
             connection = DBConnection.getInstance().getConnection();
-            DBConnection.getInstance().startTransaction(); // ** Start transaction **
+            DBConnection.getInstance().startTransaction();
 
 
             int customerId = getCustomerIdForAppointment(appointmentId);
