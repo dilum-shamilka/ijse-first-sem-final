@@ -12,16 +12,41 @@ import java.util.List;
 
 public class EmployeeModel {
 
-    public static List<String> getEmployeeIds() {
-        return List.of();
+    // This method needs to be implemented to fetch all employee IDs from the database.
+    public static List<String> getEmployeeIds() throws SQLException, ClassNotFoundException {
+        Connection connection = DBConnection.getInstance().getConnection();
+        String sql = "SELECT employee_id FROM employee";
+        PreparedStatement pstm = connection.prepareStatement(sql);
+        ResultSet rst = pstm.executeQuery();
+        List<String> employeeIds = new ArrayList<>();
+        while (rst.next()) {
+            employeeIds.add(String.valueOf(rst.getInt("employee_id")));
+        }
+        return employeeIds;
     }
 
-    public static String getEmployeeName(String employeeId) {
-        return employeeId;
+    // This method needs to be implemented to fetch an employee's name by their ID.
+    public static String getEmployeeName(String employeeId) throws SQLException, ClassNotFoundException {
+        Connection connection = DBConnection.getInstance().getConnection();
+        String sql = "SELECT name FROM employee WHERE employee_id = ?";
+        PreparedStatement pstm = connection.prepareStatement(sql);
+        pstm.setInt(1, Integer.parseInt(employeeId));
+        ResultSet rst = pstm.executeQuery();
+        if (rst.next()) {
+            return rst.getString("name");
+        }
+        return null;
     }
+
 
     public boolean saveEmployee(EmployeeDTO dto) throws SQLException, ClassNotFoundException {
-        return false;
+        Connection connection = DBConnection.getInstance().getConnection();
+        String sql = "INSERT INTO employee (name, description) VALUES (?, ?)";
+        PreparedStatement pstm = connection.prepareStatement(sql);
+        pstm.setString(1, dto.getName());
+        pstm.setString(2, dto.getDescription());
+        int affectedRows = pstm.executeUpdate();
+        return affectedRows > 0;
     }
 
     public boolean updateEmployee(EmployeeDTO dto) throws SQLException, ClassNotFoundException {
@@ -75,6 +100,4 @@ public class EmployeeModel {
         }
         return null;
     }
-
-
 }

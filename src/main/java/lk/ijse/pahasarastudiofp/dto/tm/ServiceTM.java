@@ -16,7 +16,6 @@ public class ServiceTM {
         this.price = price;
     }
 
-
     public int getServiceId() {
         return serviceId;
     }

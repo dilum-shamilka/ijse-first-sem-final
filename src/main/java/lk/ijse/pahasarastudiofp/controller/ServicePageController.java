@@ -67,9 +67,19 @@ public class ServicePageController implements Initializable {
         setCellValueFactory();
         loadAllServices();
 
+
+        btnUpdateService.setDisable(true);
+        btnDeleteService.setDisable(true);
+
         tblServices.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 fillFields(newValue);
+            } else {
+                // If selection is cleared, reset button states and clear fields
+                clearFields();
+                btnSaveService.setDisable(false);
+                btnUpdateService.setDisable(true);
+                btnDeleteService.setDisable(true);
             }
         });
     }
@@ -77,6 +87,7 @@ public class ServicePageController implements Initializable {
     private void loadPackageIds() {
         try {
             List<PackageDTO> allPackages = packageModel.getAllPackages();
+            cmbPackageId.getItems().clear();
             for (PackageDTO packageDTO : allPackages) {
                 cmbPackageId.getItems().add(packageDTO.getPackageId());
             }
@@ -93,6 +104,7 @@ public class ServicePageController implements Initializable {
     }
 
     private void loadAllServices() {
+        obList.clear();
         try {
             List<ServiceDTO> allServices = serviceModel.getAllServices();
             for (ServiceDTO service : allServices) {
@@ -136,7 +148,6 @@ public class ServicePageController implements Initializable {
             if (isSaved) {
                 new Alert(Alert.AlertType.INFORMATION, "Service saved successfully.").show();
                 loadAllServices();
-                clearFields();
             } else {
                 new Alert(Alert.AlertType.ERROR, "Failed to save service.").show();
             }
@@ -213,14 +224,16 @@ public class ServicePageController implements Initializable {
     @FXML
     void btnResetOnAction(ActionEvent event) {
         clearFields();
+        tblServices.getSelectionModel().clearSelection();
+        btnSaveService.setDisable(false);
+        btnUpdateService.setDisable(true);
+        btnDeleteService.setDisable(true);
     }
 
     private void clearFields() {
         cmbPackageId.setValue(null);
         txtServiceName.clear();
         txtPrice.clear();
-        btnSaveService.setDisable(false);
-        btnUpdateService.setDisable(true);
-        btnDeleteService.setDisable(true);
+
     }
 }
