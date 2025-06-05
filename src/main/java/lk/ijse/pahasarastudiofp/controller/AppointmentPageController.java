@@ -173,7 +173,7 @@ public class AppointmentPageController implements Initializable {
         Integer packageId = cmbPackageId.getValue();
         String name = txtName.getText();
 
-        // Input validation
+
         if (customerId == null || packageId == null || name.isEmpty()) {
             showAlert(Alert.AlertType.WARNING, "Customer, Package, and Name are required.");
             return;
@@ -185,8 +185,8 @@ public class AppointmentPageController implements Initializable {
             boolean isSaved = appointmentModel.saveAppointment(appointmentDTO);
             if (isSaved) {
                 showAlert(Alert.AlertType.INFORMATION, "Appointment saved successfully.");
-                loadAllAppointments(); // Refresh table
-                clearFields();          // Clear input fields
+                loadAllAppointments();
+                clearFields();
             } else {
                 showAlert(Alert.AlertType.ERROR, "Failed to save appointment.");
             }
@@ -241,7 +241,6 @@ public class AppointmentPageController implements Initializable {
             return;
         }
 
-        // Informative confirmation dialog about potential customer deletion
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION,
                 "Are you sure you want to delete this appointment? If this is the customer's ONLY appointment, the customer record will also be deleted.",
                 ButtonType.YES, ButtonType.NO);
@@ -253,14 +252,14 @@ public class AppointmentPageController implements Initializable {
                 boolean isDeleted = appointmentModel.deleteAppointmentAndCustomerIfNoOtherAppointments(selectedAppointment.getAppointmentId());
                 if (isDeleted) {
                     showAlert(Alert.AlertType.INFORMATION, "Appointment (and potentially customer) deleted successfully.");
-                    loadAllAppointments(); // Refresh table
-                    clearFields();          // Clear input fields
+                    loadAllAppointments();
+                    clearFields();
                 } else {
                     showAlert(Alert.AlertType.ERROR, "Failed to delete appointment (or customer).");
                 }
             } catch (SQLException | ClassNotFoundException e) {
                 showAlert(Alert.AlertType.ERROR, "Database error during deletion: " + e.getMessage());
-                e.printStackTrace(); // Print stack trace for debugging
+                e.printStackTrace();
             }
         }
     }
