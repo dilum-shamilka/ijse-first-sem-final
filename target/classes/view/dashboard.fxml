@@ -52,7 +52,7 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openEmployeePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Employees">
+                <Button onAction="#openPackagePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Packages">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
@@ -70,15 +70,6 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openPackagePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Packages">
-                    <effect>
-                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
-                            <color>
-                                <Color opacity="0.35" />
-                            </color>
-                        </DropShadow>
-                    </effect>
-                </Button>
                 <Button onAction="#openAppointmentPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Appointments">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
@@ -88,7 +79,16 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openInvoicePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Invoices">
+                <Button onAction="#openEmployeePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Employees">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
+                <Button onAction="#openEventLocationPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Event Locations">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
@@ -115,7 +115,7 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openExpensesPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Expenses">
+                <Button onAction="#openInvoicePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Invoices">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
@@ -124,7 +124,7 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openEventLocationPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Event Locations">
+                <Button onAction="#openExpensesPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Expenses">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
@@ -151,7 +151,7 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openEmailSenderPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Send Email">
+                <Button onAction="#openReportPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Reports">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
@@ -160,7 +160,7 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openReportPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Reports">
+                <Button onAction="#openEmailSenderPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Send Email">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
@@ -178,7 +178,8 @@
                         </DropShadow>
                     </effect>
                     <VBox.margin>
-                        <Insets top="5.0" /> </VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
                 </Button>
             </children>
             <effect>

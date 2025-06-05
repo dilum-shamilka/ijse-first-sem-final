@@ -115,7 +115,7 @@ public class customerpagecontroller implements Initializable {
             boolean isSaved = customerModel.saveCustomer(customerDTO);
             if (isSaved) {
                 new Alert(Alert.AlertType.INFORMATION, "Customer saved successfully.").show();
-                loadTableData(); // Reload the table to show the new customer
+                loadTableData();
                 clearFields();
             } else {
                 new Alert(Alert.AlertType.ERROR, "Failed to save customer.").show();
@@ -161,7 +161,7 @@ public class customerpagecontroller implements Initializable {
             boolean isUpdated = customerModel.updateCustomer(customerDTO);
             if (isUpdated) {
                 new Alert(Alert.AlertType.INFORMATION, "Customer updated successfully.").show();
-                loadTableData(); // Reload the table to show the updated customer
+                loadTableData();
                 clearFields();
             } else {
                 new Alert(Alert.AlertType.ERROR, "Failed to update customer.").show();
@@ -187,7 +187,7 @@ public class customerpagecontroller implements Initializable {
                 boolean isDeleted = customerModel.deleteCustomer(selectedCustomer.getCustomerId());
                 if (isDeleted) {
                     new Alert(Alert.AlertType.INFORMATION, "Customer deleted successfully.").show();
-                    loadTableData(); // Reload the table after deletion
+                    loadTableData();
                     clearFields();
                 } else {
                     new Alert(Alert.AlertType.ERROR, "Failed to delete customer.").show();
