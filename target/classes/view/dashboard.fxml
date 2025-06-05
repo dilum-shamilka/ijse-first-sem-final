@@ -52,6 +52,15 @@
                         </DropShadow>
                     </effect>
                 </Button>
+                <Button onAction="#openEmployeePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Employees">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
+                            <color>
+                                <Color opacity="0.35" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Button>
                 <Button onAction="#openPackagePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Packages">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
@@ -71,15 +80,6 @@
                     </effect>
                 </Button>
                 <Button onAction="#openAppointmentPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Appointments">
-                    <effect>
-                        <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
-                            <color>
-                                <Color opacity="0.35" />
-                            </color>
-                        </DropShadow>
-                    </effect>
-                </Button>
-                <Button onAction="#openEmployeePage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Employees">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
