@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df55b524-48b5-4780-a365-216645949b08" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/PaymentDetailsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/dto/PaymentDetailsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/EmployeeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/EmployeeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/ExpensesModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/ExpensesModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/ServiceModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/model/ServiceModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/pahasarastudiofp/model/CustomerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +209,7 @@
       <workItem from="1748991509393" duration="526000" />
       <workItem from="1748993761017" duration="637000" />
       <workItem from="1748996177071" duration="511000" />
-      <workItem from="1749106314948" duration="9746000" />
+      <workItem from="1749106314948" duration="11448000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -428,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749135685327</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1749136065425</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1749136065425</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

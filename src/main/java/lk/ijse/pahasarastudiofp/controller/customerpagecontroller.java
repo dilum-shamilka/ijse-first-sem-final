@@ -1,4 +1,3 @@
-
 package lk.ijse.pahasarastudiofp.controller;
 
 import javafx.collections.FXCollections;
@@ -75,6 +74,10 @@ public class customerpagecontroller implements Initializable {
             "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
     private static final Pattern EMAIL_PATTERN = Pattern.compile(EMAIL_REGEX);
 
+
+    private static final String PHONE_REGEX = "^\\d{10}$";
+    private static final Pattern PHONE_PATTERN = Pattern.compile(PHONE_REGEX);
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -115,9 +118,14 @@ public class customerpagecontroller implements Initializable {
             return;
         }
 
-
         if (!isValidEmail(email)) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid email address.").show();
+            return;
+        }
+
+
+        if (!contact.isEmpty() && !isValidContact(contact)) {
+            new Alert(Alert.AlertType.WARNING, "Please enter a valid 10-digit phone number for contact.").show();
             return;
         }
 
@@ -167,9 +175,14 @@ public class customerpagecontroller implements Initializable {
             return;
         }
 
-
         if (!isValidEmail(email)) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid email address.").show();
+            return;
+        }
+
+
+        if (!contact.isEmpty() && !isValidContact(contact)) {
+            new Alert(Alert.AlertType.WARNING, "Please enter a valid 10-digit phone number for contact.").show();
             return;
         }
 
@@ -257,6 +270,15 @@ public class customerpagecontroller implements Initializable {
             return false;
         }
         Matcher matcher = EMAIL_PATTERN.matcher(email);
+        return matcher.matches();
+    }
+
+
+    private boolean isValidContact(String contact) {
+        if (contact == null) {
+            return false;
+        }
+        Matcher matcher = PHONE_PATTERN.matcher(contact);
         return matcher.matches();
     }
 

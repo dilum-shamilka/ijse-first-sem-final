@@ -1,4 +1,4 @@
-// File: src/main/java/lk/ijse/pahasarastudiofp/model/CustomerModel.java
+
 
 package lk.ijse.pahasarastudiofp.model;
 
