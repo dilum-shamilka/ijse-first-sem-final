@@ -78,7 +78,6 @@ public class ExpensesModel {
         return null;
     }
 
-    // Method to get employee name for displaying in the table
     public String getEmployeeName(int employeeId) throws SQLException, ClassNotFoundException {
         Connection connection = DBConnection.getInstance().getConnection();
         String sql = "SELECT name FROM employee WHERE employee_id=?";

@@ -203,7 +203,6 @@ public class EventLocationPageController implements Initializable {
         clearFields();
     }
 
-    // Clear all input fields and reset buttons and table selection
     private void clearFields() {
         txtAddress.clear();
         txtLocationType.clear();

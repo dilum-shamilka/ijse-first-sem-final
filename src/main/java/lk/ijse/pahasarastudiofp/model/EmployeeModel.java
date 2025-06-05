@@ -12,7 +12,6 @@ import java.util.List;
 
 public class EmployeeModel {
 
-    // This method needs to be implemented to fetch all employee IDs from the database.
     public static List<String> getEmployeeIds() throws SQLException, ClassNotFoundException {
         Connection connection = DBConnection.getInstance().getConnection();
         String sql = "SELECT employee_id FROM employee";
@@ -25,7 +24,6 @@ public class EmployeeModel {
         return employeeIds;
     }
 
-    // This method needs to be implemented to fetch an employee's name by their ID.
     public static String getEmployeeName(String employeeId) throws SQLException, ClassNotFoundException {
         Connection connection = DBConnection.getInstance().getConnection();
         String sql = "SELECT name FROM employee WHERE employee_id = ?";

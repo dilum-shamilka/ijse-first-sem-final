@@ -1,4 +1,3 @@
-// File: src/main/java/lk/ijse/pahasarastudiofp/controller/customerpagecontroller.java
 
 package lk.ijse.pahasarastudiofp.controller;
 
@@ -10,7 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
-import  lk.ijse.pahasarastudiofp.dto.CustomerDTO;
+import lk.ijse.pahasarastudiofp.dto.CustomerDTO;
 import lk.ijse.pahasarastudiofp.dto.tm.CustomerTM;
 import lk.ijse.pahasarastudiofp.model.CustomerModel;
 
@@ -20,6 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class customerpagecontroller implements Initializable {
 
@@ -69,6 +70,11 @@ public class customerpagecontroller implements Initializable {
     private final CustomerModel customerModel = new CustomerModel();
     private ObservableList<CustomerTM> obList = FXCollections.observableArrayList();
 
+
+    private static final String EMAIL_REGEX =
+            "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+    private static final Pattern EMAIL_PATTERN = Pattern.compile(EMAIL_REGEX);
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -99,13 +105,19 @@ public class customerpagecontroller implements Initializable {
 
     @FXML
     void btnSaveOnAction(ActionEvent event) {
-        String name = txtName.getText();
-        String email = txtEmail.getText();
-        String contact = txtContact.getText();
-        String address = txtAddress.getText();
+        String name = txtName.getText().trim();
+        String email = txtEmail.getText().trim();
+        String contact = txtContact.getText().trim();
+        String address = txtAddress.getText().trim();
 
         if (name.isEmpty() || email.isEmpty()) {
             new Alert(Alert.AlertType.WARNING, "Name and Email are required.").show();
+            return;
+        }
+
+
+        if (!isValidEmail(email)) {
+            new Alert(Alert.AlertType.WARNING, "Please enter a valid email address.").show();
             return;
         }
 
@@ -145,13 +157,19 @@ public class customerpagecontroller implements Initializable {
         }
 
         int id = selectedCustomer.getCustomerId();
-        String name = txtName.getText();
-        String email = txtEmail.getText();
-        String contact = txtContact.getText();
-        String address = txtAddress.getText();
+        String name = txtName.getText().trim();
+        String email = txtEmail.getText().trim();
+        String contact = txtContact.getText().trim();
+        String address = txtAddress.getText().trim();
 
         if (name.isEmpty() || email.isEmpty()) {
             new Alert(Alert.AlertType.WARNING, "Name and Email are required.").show();
+            return;
+        }
+
+
+        if (!isValidEmail(email)) {
+            new Alert(Alert.AlertType.WARNING, "Please enter a valid email address.").show();
             return;
         }
 
@@ -219,7 +237,7 @@ public class customerpagecontroller implements Initializable {
     public void resetPage(){
         try {
             loadTableData();
-            clearFields(); // Use existing clearFields method
+            clearFields();
         } catch (Exception e) {
             e.printStackTrace();
             new Alert(Alert.AlertType.ERROR, "Failed to Reset Customer Page").show();
@@ -234,7 +252,14 @@ public class customerpagecontroller implements Initializable {
         }
     }
 
-    // Getters and Setters for buttons (if needed by FXML or other parts of the app)
+    private boolean isValidEmail(String email) {
+        if (email == null) {
+            return false;
+        }
+        Matcher matcher = EMAIL_PATTERN.matcher(email);
+        return matcher.matches();
+    }
+
     public Button getBtnSaveClient() {
         return btnSaveClient;
     }

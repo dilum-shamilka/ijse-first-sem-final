@@ -74,7 +74,7 @@ public class PackagePageController implements Initializable {
     private void loadAllPackages() {
         try {
             List<PackageDTO> allPackages = packageModel.getAllPackages();
-            obList.clear(); // clear existing items
+            obList.clear();
             for (PackageDTO dto : allPackages) {
                 obList.add(new PackageTM(dto.getPackageId(), dto.getName(), dto.getDescription()));
             }

@@ -52,7 +52,7 @@ public class EmployeePageController implements Initializable {
     private final EmployeeModel employeeModel = new EmployeeModel();
     private final ObservableList<EmployeeTM> obList = FXCollections.observableArrayList();
 
-    // Track selected employee id for update/delete
+
     private int selectedEmployeeId = -1;
 
     @Override

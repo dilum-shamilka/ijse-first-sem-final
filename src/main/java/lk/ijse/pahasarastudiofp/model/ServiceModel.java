@@ -55,7 +55,7 @@ public class ServiceModel {
     }
 
     public boolean updateService(ServiceDTO dto) throws SQLException, ClassNotFoundException {
-        // Using try-with-resources
+
         try (Connection connection = DBConnection.getInstance().getConnection();
              PreparedStatement pstm = connection.prepareStatement("UPDATE service SET package_id=?, name=?, price=? WHERE service_id=?")) {
 
@@ -99,7 +99,6 @@ public class ServiceModel {
     }
 
     public ServiceDTO getService(int id) throws SQLException, ClassNotFoundException {
-        // Using try-with-resources
         try (Connection connection = DBConnection.getInstance().getConnection();
              PreparedStatement pstm = connection.prepareStatement("SELECT * FROM service WHERE service_id=?")) {
 

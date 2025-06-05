@@ -52,7 +52,6 @@ public class PaymentDetailsDTO {
                 "paymentId=" + paymentId +
                 ", appointmentId=" + appointmentId +
                 ", amount=" + amount +
-                // Removed: ", status='" + status + '\'' +
                 '}';
     }
 

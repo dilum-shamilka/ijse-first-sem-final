@@ -24,12 +24,10 @@ public class LoginController {
 
 
         if (username.equals("dilu") && password.equals("1")) {
-            // Successful login
+
             try {
 
                 Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-
                 Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/dashboard.fxml")));
                 Scene scene = new Scene(root);
                 stage.setTitle("Pahasara Studio Management System");
@@ -42,7 +40,6 @@ public class LoginController {
                 new Alert(Alert.AlertType.ERROR, "Failed to load dashboard!").show();
             }
         } else {
-            // Failed login
             new Alert(Alert.AlertType.ERROR, "Invalid Username or Password!").show();
         }
     }
