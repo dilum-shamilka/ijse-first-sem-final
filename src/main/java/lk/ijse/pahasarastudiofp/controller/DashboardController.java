@@ -81,25 +81,9 @@ public class DashboardController {
     }
 
 
-    public void openAppoinmentPackagePage(ActionEvent actionEvent) throws IOException {
-        loadAndShowStage("appoinmentpackage.fxml", "Appointment Packages");
-    }
-
-
-    public void openAppoinmentEventLocationPage(ActionEvent actionEvent) throws IOException {
-        loadAndShowStage("apoinmenteventlocation.fxml", "Appointment Locations");
-    }
-
-
     public void openPackageServicePage(ActionEvent actionEvent) throws IOException {
         loadAndShowStage("packageservice.fxml", "Package Services");
     }
-
-
-    public void openEmployeeServicePage(ActionEvent actionEvent) throws IOException {
-        loadAndShowStage("serviceemployee.fxml", "Employee Service Management");
-    }
-
 
     public void openReportPage(ActionEvent actionEvent) throws IOException {
         try {
