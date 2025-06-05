@@ -97,7 +97,7 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openPaymentDetailsPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Payment Details">
+                <Button onAction="#openDiscountPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Discounts">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
@@ -106,7 +106,7 @@
                         </DropShadow>
                     </effect>
                 </Button>
-                <Button onAction="#openDiscountPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Discounts">
+                <Button onAction="#openPaymentDetailsPage" prefHeight="30.0" prefWidth="160.0" style="-fx-background-color: white; -fx-text-fill: #333333; -fx-background-radius: 5; -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 6px 12px; -fx-border-color: #D3D3D3; -fx-border-width: 0.8;" text="Payment Details">
                     <effect>
                         <DropShadow blurType="GAUSSIAN" height="7.0" radius="2.5" width="7.0">
                             <color>
