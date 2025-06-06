@@ -40,7 +40,7 @@ public class DiscountModel {
                     rst.getInt("discount_id"),
                     rst.getString("discount_name"),
                     rst.getDouble("discount_percentage"),
-                    rst.getDouble("discount_amount") // Added to constructor
+                    rst.getDouble("discount_amount")
             ));
         }
         return (ArrayList<DiscountDTO>) discounts;
