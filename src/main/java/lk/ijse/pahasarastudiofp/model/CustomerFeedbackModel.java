@@ -78,7 +78,6 @@ public class CustomerFeedbackModel {
         return null;
     }
 
-    // Methods to get customer and appointment names for display
     public String getCustomerName(int customerId) throws SQLException, ClassNotFoundException {
         Connection connection = DBConnection.getInstance().getConnection();
         String sql = "SELECT name FROM customer WHERE customer_id=?";
