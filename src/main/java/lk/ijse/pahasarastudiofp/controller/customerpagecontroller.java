@@ -122,7 +122,7 @@ public class customerpagecontroller implements Initializable {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid email address.").show();
             return;
         }
-
+//
 
         if (!contact.isEmpty() && !isValidContact(contact)) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid 10-digit phone number for contact.").show();
