@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-
+// This controller handles the appointment management functionality in the Pahasara Studio application.
 public class AppointmentPageController implements Initializable {
 
     @FXML
